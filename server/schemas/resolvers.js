@@ -16,14 +16,9 @@ const resolvers = {
     },
     //Searches a specific user
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("appointments");
+      return User.findOne({ username }).populate("contact");
     },
-    appt: async (parent, { meid, appointID }) => {
-      return await User.findOne({
-        _id: meid,
-        "appointments._id": appointID,
-      });
-    },
+
   },
   Mutation: {
     //addUser tested and working
@@ -55,48 +50,6 @@ const resolvers = {
         { password: password }
       );
       return user;
-    },
-    createAppointment: async (parent, { input }, context) => {
-      if (context.user) {
-        return await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $addToSet: { appointments: input } },
-          { new: true }
-        );
-      }
-      throw new AuthenticationError("You need to be logged in!");
-    },
-    updateAppointment: async (parent, { appointID, input }, context) => {
-      if (context.user) {
-        return await User.findOneAndUpdate(
-          {
-            _id: context.user._id,
-            "appointments._id": appointID,
-          },
-          {
-            $set: {
-              "appointments.$.name": input.name,
-              "appointments.$.message": input.message,
-              "appointments.$.day": input.day,
-              "appointments.$.month": input.month,
-              "appointments.$.year": input.year,
-              "appointments.$.time": input.time,
-            },
-          },
-          { new: true }
-        );
-      }
-      throw new AuthenticationError("Context error");
-    },
-    deleteAppointment: async (parent, { appointID }, context) => {
-      if (context.user) {
-        return User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $pull: { appointments: { _id: appointID } } },
-          { new: true }
-        );
-      }
-      throw new AuthenticationError("Please sign in!");
     },
   },
 };
