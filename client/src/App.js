@@ -4,7 +4,7 @@ import {
 	InMemoryCache,
 	ApolloProvider,
 	createHttpLink,
-  } from '@apollo/client';
+} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -19,24 +19,24 @@ import Signup from "./components/Signup";
 
 const httpLink = createHttpLink({
 	uri: '/graphql',
-  });
-  
-  const authLink = setContext((_, { headers }) => {
+});
+
+const authLink = setContext((_, { headers }) => {
 
 	const token = localStorage.getItem('id_token');
 
 	return {
-	  headers: {
-		...headers,
-		authorization: token ? `Bearer ${token}` : '',
-	  },
+		headers: {
+			...headers,
+			authorization: token ? `Bearer ${token}` : '',
+		},
 	};
-  });
-  
-  const client = new ApolloClient({
+});
+
+const client = new ApolloClient({
 	link: authLink.concat(httpLink),
 	cache: new InMemoryCache(),
-  });
+});
 
 function App() {
 
@@ -49,31 +49,31 @@ function App() {
 				<div>
 					<main>
 						<Routes>
-							<Route 
-								path="/" 
-								element={<Home />} 
+							<Route
+								path="/"
+								element={<Home />}
 							/>
-							<Route 
-								path="/product" 
-								element={<Product />} 
+							<Route
+								path="/product"
+								element={<Product />}
 							/>
-							<Route 
-								path="/gallery" 
-								element={<Gallery />} 
+							<Route
+								path="/gallery"
+								element={<Gallery />}
 							/>
-							<Route 
-								path="/about" 
-								element={<About />} 
+							<Route
+								path="/about"
+								element={<About />}
 							/>
-							<Route 
-								path="/login" 
-								element={<Login />} 
+							<Route
+								path="/login"
+								element={<Login />}
 							/>
-							<Route 
-								path="/signup" 
-								element={<Signup />} 
+							<Route
+								path="/signup"
+								element={<Signup />}
 							/>
-					</Routes>
+						</Routes>
 					</main>
 				</div>
 				<div>
