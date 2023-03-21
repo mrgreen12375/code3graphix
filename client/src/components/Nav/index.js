@@ -6,7 +6,7 @@ function Nav() {
 	const logout = (event) => {
 		event.preventDefault();
 		Auth.logout();
-	  };
+	};
 	return (
 		<nav>
 			<ul>
@@ -14,13 +14,13 @@ function Nav() {
 					<Link to="/">Home</Link>
 				</li>
 				<li>
-                    <Link to="/Product">Product</Link>
+					<Link to="/Product">Product</Link>
 				</li>
 				<li>
 					<Link to="/Gallery">Gallery</Link>
 				</li>
-                <li>
-					<Link to="/About">About</Link>
+				<li>
+					<Link to="/Contact">Contact</Link>
 				</li>
 				<li>
 					{Auth.loggedIn() ? (<div onClick={logout}>Logout</div>) : (<Link to="/login">Login</Link>)}

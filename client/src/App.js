@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import Gallery from "./components/Gallery";
-import About from "./components/About";
+import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 
@@ -62,8 +62,8 @@ function App() {
 								element={<Gallery />}
 							/>
 							<Route
-								path="/about"
-								element={<About />}
+								path="/contact"
+								element={<Contact />}
 							/>
 							<Route
 								path="/login"
