@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
-const appointSchema = require("./Appointment");
+const contactSchema = require("./Contact");
 
 const userSchema = new Schema(
   {
@@ -19,7 +19,7 @@ const userSchema = new Schema(
       type: String,
       requred: true,
     },
-    appointments: [appointSchema],
+    contact: [contactSchema],
   },
   {
     toJSON: {
@@ -42,8 +42,8 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
-userSchema.virtual("appointmentCount").get(function () {
-  return this.appointments.length;
+userSchema.virtual("contactCount").get(function () {
+  return this.contact.length;
 });
 
 const User = model("User", userSchema);

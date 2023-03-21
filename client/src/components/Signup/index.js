@@ -36,17 +36,17 @@ const Signup = () => {
   };
 
   return (
-    <main>
+    <main className="center margin">
       <div>
-        <h2 className="title">Sign-up</h2>
+        <h2>Sign-up</h2>
         {data ? (
           <p>
           </p>
         ) : (
-          <form className="scheduleForm" onSubmit={handleFormSubmit}>
-            <div className="allignForm">
-              <div className="scheduleContainer">
-                <label className="userLabel">Username:</label>
+          <form onSubmit={handleFormSubmit}>
+            <div>
+              <div>
+                <label>Username:</label>
                 <input
                   className="passwordInput"
                   name="username"
@@ -55,9 +55,9 @@ const Signup = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="scheduleContainer">
-                <div className="scheduleContainer">
-                  <label className="nameLabel">Email:</label>
+              <div>
+                <div>
+                  <label>Email:</label>
                   <input
                     className="emailInput"
                     name="email"
@@ -66,8 +66,8 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="scheduleContainer">
-                  <label className="nameLabel">Password:</label>
+                <div>
+                  <label>Password:</label>
                   <input
                     className="passwordInput"
                     name="password"
@@ -76,7 +76,7 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="loginForm">
+                <div>
                   <button
                     className="loginButton"
                     style={{ cursor: "pointer" }}
@@ -84,7 +84,7 @@ const Signup = () => {
                   >
                     Sign-up
                   </button>
-                  <Link className="logInstead" to="/login">
+                  <Link to="/login">
                     Login instead
                   </Link>
                 </div>

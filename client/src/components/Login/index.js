@@ -39,17 +39,17 @@ const Login = (props) => {
   };
 
   return (
-    <main>
+    <main className="center margin">
       <div>
-        <h2 className="title">Login</h2>
+        <h2>Login</h2>
         {data ? (
           <p>
           </p>
         ) : (
-          <form className="scheduleForm" onSubmit={handleFormSubmit}>
-            <div className="allignForm">
-              <div className="scheduleContainer">
-                <label className="nameLabel">Email:</label>
+          <form onSubmit={handleFormSubmit}>
+            <div>
+              <div>
+                <label>Email:</label>
                 <input
                   className="emailInput"
                   name="email"
@@ -58,8 +58,8 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="scheduleContainer">
-                <label className="nameLabel">Password:</label>
+              <div>
+                <label>Password:</label>
                 <input
                   className="passwordInput"
                   name="password"
@@ -68,7 +68,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="loginForm">
+              <div>
                 <button
                   className="loginButton"
                   style={{ cursor: "pointer" }}
@@ -76,7 +76,7 @@ const Login = (props) => {
                 >
                   Login
                 </button>
-                <Link className="logInstead" to="/signup">
+                <Link to="/signup">
                   Sign-up instead
                 </Link>
               </div>
