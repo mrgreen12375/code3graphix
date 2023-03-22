@@ -15,6 +15,7 @@ export default function Footer() {
 	const ref = React.useRef(null);
 
 	return (
+
 		<Box sx={{ pb: 7 }} ref={ref}>
 			<CssBaseline />
 			
@@ -32,6 +33,7 @@ export default function Footer() {
 				</BottomNavigation>
 			</Paper>
 		</Box>
+
 	);
 }
 
