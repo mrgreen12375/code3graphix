@@ -1,13 +1,51 @@
-import React from "react";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
-function Contact() {
-    
+export default function MultilineTextFields() {
   return (
-    <main className="center">
-      <h1>Contact</h1>
-      <h1 className="margin">Contact Content Here</h1>
-    </main>
+    <div>
+      <Box
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column'
+        }}
+        component="form"
+        sx={{
+          '& .MuiTextField-root': { m: 1, width: '25ch' },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <div>
+
+          <TextField
+            id="outlined-textarea"
+            label="First Name"
+            placeholder="First Name"
+            multiline
+          />
+          <TextField
+            id="outlined-textarea"
+            label="Last Name"
+            placeholder="Last Name"
+            multiline
+          />
+          <TextField
+            id="outlined-textarea"
+            label="Email"
+            placeholder="Email"
+            multiline
+          />
+          <TextField
+            id="outlined-multiline-static"
+            label="Message"
+            multiline
+            rows={4}
+          />
+        </div>
+      </Box>
+    </div>
   );
 }
-
-export default Contact;
