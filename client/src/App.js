@@ -46,7 +46,6 @@ function App() {
 				<div>
 					<Header/>
 				</div>
-				<div>
 					<main>
 						<Routes>
 							<Route
@@ -75,7 +74,6 @@ function App() {
 							/>
 						</Routes>
 					</main>
-				</div>
 				<div>
 					<Footer />
 				</div>

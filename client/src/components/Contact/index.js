@@ -2,15 +2,11 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function MultilineTextFields() {
+export default function Contact() {
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '150px'}}>
       <Box
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'column'
-        }}
+        
         component="form"
         sx={{
           '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -18,8 +14,7 @@ export default function MultilineTextFields() {
         noValidate
         autoComplete="off"
       >
-        <div>
-
+        <form style={{ display: 'flex', flexDirection: 'column'}}>
           <TextField
             id="outlined-textarea"
             label="First Name"
@@ -42,9 +37,9 @@ export default function MultilineTextFields() {
             id="outlined-multiline-static"
             label="Message"
             multiline
-            rows={4}
+            rows={10}
           />
-        </div>
+        </form>
       </Box>
     </div>
   );
