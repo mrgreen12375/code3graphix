@@ -7,6 +7,7 @@ function Product() {
       <div className="product">
         {itemData.map((item) => (
           <div key={item.img}>
+            <h3 className="center">{`${item.title}`}</h3>
             <img className="productImage"
               src={`${item.img}`}
               srcSet={`${item.img}`}
