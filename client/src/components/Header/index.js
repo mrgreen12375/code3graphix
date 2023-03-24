@@ -4,10 +4,11 @@ import Nav from "../Nav";
 function Header() {
 
 	return (
-		<header  id="headerLogo" className="center">
-			Header Content Here
-			<Nav/>
-		</header>
+		<div className="headerContainer" >
+			<header className="center" id="headerLogo">
+				<Nav/>
+			</header>
+		</div>
 	);
 }
 

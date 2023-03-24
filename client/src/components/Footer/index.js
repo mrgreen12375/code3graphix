@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import Paper from '@mui/material/Paper';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import PhoneIcon from '@mui/icons-material/Phone';
 
 
 export default function Footer() {
@@ -30,6 +30,7 @@ export default function Footer() {
 					<BottomNavigationAction href="https://www.instagram.com/code3graphix/" target="_blank" label="Instagram" icon={<InstagramIcon />} />
 					<BottomNavigationAction href="https://www.facebook.com/Code3Graphix" target="_blank" label="Facebook" icon={<FacebookIcon />} />
 					<BottomNavigationAction onClick={() => window.location = "mailto:info@code3graphix.com"} label="Email" icon={<EmailIcon />} />
+					<BottomNavigationAction href="tel:5208226423" label="Phone" icon={<PhoneIcon />} />
 				</BottomNavigation>
 			</Paper>
 		</Box>
