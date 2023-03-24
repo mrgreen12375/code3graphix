@@ -62,7 +62,7 @@ export default function Contact() {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '150px' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
       <Box
 
         component="form"
@@ -113,7 +113,9 @@ export default function Contact() {
 							<p style={{ color: '#ba1200'}}>{errorMessage}</p>
 						</div>
 					)}
-          <button onClick={sendEmail}>Send Email</button>
+          <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
+            <button className="buttons">Send Email</button>
+          </div>
         </form>
       </Box>
     </div>
