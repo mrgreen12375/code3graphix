@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Auth from '../../utils/auth';
 
 function Nav() {
-	const logout = (event) => {
-		event.preventDefault();
-		Auth.logout();
-	};
 	return (
 		<div className="navBar">
 			<nav>
@@ -24,7 +19,7 @@ function Nav() {
 						<Link to="/Contact">Contact</Link>
 					</li>
 					<li>
-						{Auth.loggedIn() ? (<div onClick={logout}>Logout</div>) : (<Link to="/login">Login</Link>)}
+						<Link to="/About">About</Link>
 					</li>
 				</ul>
 			</nav>

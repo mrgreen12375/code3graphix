@@ -14,6 +14,7 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 
@@ -63,6 +64,10 @@ function App() {
 							<Route
 								path="/contact"
 								element={<Contact />}
+							/>
+							<Route
+								path="/about"
+								element={<About />}
 							/>
 							<Route
 								path="/login"
