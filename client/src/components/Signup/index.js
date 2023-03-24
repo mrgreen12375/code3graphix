@@ -36,17 +36,17 @@ const Signup = () => {
   };
 
   return (
-    <main className="center margin">
+    <main className="center">
+      <h1>Sign-up</h1>
       <div>
-        <h2>Sign-up</h2>
         {data ? (
           <p>
           </p>
         ) : (
           <form onSubmit={handleFormSubmit}>
             <div>
-              <div>
-                <label>Username:</label>
+              <div className="loginContainer">
+                <label className="nameLabel">Username:</label>
                 <input
                   className="passwordInput"
                   name="username"
@@ -56,8 +56,8 @@ const Signup = () => {
                 />
               </div>
               <div>
-                <div>
-                  <label>Email:</label>
+                <div className="loginContainer">
+                  <label className="nameLabel">Email:</label>
                   <input
                     className="emailInput"
                     name="email"
@@ -66,8 +66,8 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div>
-                  <label>Password:</label>
+                <div className="loginContainer">
+                  <label className="nameLabel">Password:</label>
                   <input
                     className="passwordInput"
                     name="password"
@@ -84,7 +84,7 @@ const Signup = () => {
                   >
                     Sign-up
                   </button>
-                  <Link to="/login">
+                  <Link className="logInstead" to="/login">
                     Login instead
                   </Link>
                 </div>

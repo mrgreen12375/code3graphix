@@ -62,6 +62,8 @@ export default function Contact() {
   }
 
   return (
+  <div>
+    <h1 className="center">Contact</h1>
     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
       <Box
 
@@ -119,5 +121,6 @@ export default function Contact() {
         </form>
       </Box>
     </div>
+  </div>
   );
 }
