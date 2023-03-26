@@ -1,6 +1,31 @@
 import React from "react";
+import Thermos_nurse from '../../assets/gallery_images/thermos - nurse.png'
+import Thermos_to_the_moon from '../../assets/gallery_images/thermos - I love you to the moon.png'
+import Thermos_chile from '../../assets/gallery_images/thermos - chile.png'
+import Thermos_beth_dutton from '../../assets/gallery_images/thermos - beth dutton.png'
+import Thermos_badge from '../../assets/gallery_images/thermos - badge.png'
+import Cup_math from '../../assets/gallery_images/cup - math.png'
+import Cup_fire_chief from '../../assets/gallery_images/cup - fire chief.png'
+import Glass_cup_911_tribute from '../../assets/gallery_images/glass cups - 911 tribute.png'
+import Glass_cup_wedding_glass from '../../assets/gallery_images/glass cup - wedding champaine glass.png'
+import Mug_spookie from '../../assets/gallery_images/mugs - spookie sisters.png'
+import Mug_mommy from '../../assets/gallery_images/mugs - mommy.png'
+import Mug_code3graphix from '../../assets/gallery_images/mugs - code3graphix.png'
+import Can_holder_we_the_people from '../../assets/gallery_images/can holder - we the people.png'
+import Can_holder_sahaurita from '../../assets/gallery_images/can holder - sahaurita.png'
+import Flask_simple_man from '../../assets/gallery_images/flask - simple man.png'
+import Ornament_christmas_names from '../../assets/gallery_images/ornament - christmas family names.png'
+import Ornament_green_snowflake from '../../assets/gallery_images/ornament - green snowflake.jpg'
+import Ornament_snowman from '../../assets/gallery_images/ornament - snowman.jpg'
+import Sign_announcement from '../../assets/gallery_images/sign - birth announcement.png'
+import Coster_stone from '../../assets/gallery_images/stone coster - green valley.png'
+import Bottle_opener_midtown from '../../assets/gallery_images/bottle opener.png'
+import Bottle_opener_midtown2 from '../../assets/gallery_images/bottle opener 2.png'
+import Poker_chip_bounty from '../../assets/gallery_images/poker chips - bounty.png'
+import Code_3 from '../../assets/gallery_images/Code 3 Graphix Logo.png'
 
 function Gallery() {
+
   return (
     <main>
       <h1 className="center">Gallery</h1>
@@ -24,99 +49,99 @@ export default Gallery;
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: Thermos_nurse,
+    title: 'Thermos - Nurse',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: Thermos_to_the_moon,
+    title: 'Thermos - I love you to the moon',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: Thermos_chile,
+    title: 'Thermos - Chile',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
+    img: Thermos_beth_dutton,
+    title: 'Thermos - Beth Dutton',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: Thermos_badge,
+    title: 'Thermos - Badge',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: Cup_math,
+    title: 'Cup - Math',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: Cup_fire_chief,
+    title: 'Cup - Fire Chief',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: Glass_cup_911_tribute,
+    title: 'Glass Cup - 911 Tribute',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: Glass_cup_wedding_glass,
+    title: 'Glass Cup - Wedding Champaine Glass',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: Mug_spookie,
+    title: 'Mug - Spookie',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: Mug_mommy,
+    title: 'Mug - Mommy and Daddy to be',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: Mug_code3graphix,
+    title: 'Mugs - Code3Graphix',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: Can_holder_we_the_people,
+    title: 'Can Holder - We the people',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: Can_holder_sahaurita,
+    title: 'Can Holder - Sahaurita',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: Flask_simple_man,
+    title: 'Flask - Simple Man',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
+    img: Ornament_christmas_names,
+    title: 'Ornament - Christmas Family Names',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: Ornament_green_snowflake,
+    title: 'Ornament - Green Snomflake',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: Ornament_snowman,
+    title: 'Ornament - Snowman',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: Sign_announcement,
+    title: 'Sign - Birth Announcement',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: Coster_stone,
+    title: 'Coster - Green Valley',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: Bottle_opener_midtown,
+    title: 'Bottle Opener - Midtown',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: Bottle_opener_midtown2,
+    title: 'Bottle Opener - Midtown2',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: Poker_chip_bounty,
+    title: 'Poker Chip - Bounty',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: Code_3,
+    title: 'Code 3 Graphix Logo',
   },
 ];
