@@ -32,13 +32,14 @@
 .loginNav {
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
+  align-items:center;
   color: white;
   position: sticky;
   left: 1270px;
   bottom: 900px;
   margin-right: 20px;
 }
+
 
 @media screen and (min-width: 1240px) {
   .loginNav {
