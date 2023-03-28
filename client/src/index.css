@@ -22,11 +22,18 @@
 }
 
 #headerLogo {
-  background-image: url(../src/assets/images/testLogo.PNG);
+  background-image: url(https://cdn.pixabay.com/photo/2015/10/09/16/46/abstract-979604_960_720.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 300px;
+}
+
+.title {
+  color: white;
+  font-size: 90px;
+  font-family: cinzel;
+  margin-bottom: 5px;
 }
 
 .loginNav {
@@ -35,16 +42,10 @@
   align-items:center;
   color: white;
   position: sticky;
-  left: 1270px;
+  left: 2000px;
   bottom: 900px;
   margin-right: 20px;
-}
-
-
-@media screen and (min-width: 1240px) {
-  .loginNav {
-    left: 1500px;
-  }
+  margin-bottom: -25px;
 }
 
 .loginNav h5 {
