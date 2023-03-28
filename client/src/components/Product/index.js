@@ -1,4 +1,14 @@
 import React from "react";
+import Water_bottle from '../../assets/product_images/water_bottle.png'
+import Tumbler from '../../assets/product_images/tumbler.png'
+import Travel_mug from '../../assets/product_images/travel_mug.png'
+import Beverage_holder from '../../assets/product_images/beverage_holder.png'
+import Coaster from '../../assets/product_images/coaster.png'
+import Flask from '../../assets/product_images/flask.png'
+import Plaque from '../../assets/product_images/plaque.png'
+import Sign from '../../assets/product_images/sign.png'
+import Ornament from '../../assets/product_images/ornament.png'
+import Bottle_openers from '../../assets/product_images/bottle_openers.png'
 
 function Product() {
   return (
@@ -29,62 +39,62 @@ export default Product;
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: Water_bottle,
+    title: 'Water Bottle',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: Tumbler,
+    title: 'Tumbler',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: Travel_mug,
+    title: 'Travel Mug',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
+    img: Beverage_holder,
+    title: 'Beverage Holder',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: Coaster,
+    title: 'Coaster',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: Flask,
+    title: 'Flask',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: Plaque,
+    title: 'Plaque',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-    price: '$19.99',
-    view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: Sign,
+    title: 'Sign',
     price: '$19.99',    
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: Ornament,
+    title: 'Ornament',
+    price: '$19.99',
+    view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
+  },
+  {
+    img: Bottle_openers,
+    title: 'Bottle Openers',
     price: '$19.99',
     view: 'browse.jdsindustries.com/main.php?r=frontEnd&view=shop&jds-category1=15&jds-category1-desc=Drinkware',
   },

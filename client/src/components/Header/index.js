@@ -28,6 +28,7 @@ function Header() {
 						{Auth.loggedIn() ? (<div className="login" onClick={logout}>Logout</div>) : (<Link className="login" to="/login">Login/Sign-up</Link>)}
 					</div>
 				</div>
+				<h1 className="title">Code 3 Graphix</h1>
 				<Nav/>
 			</header>
 		</div>
