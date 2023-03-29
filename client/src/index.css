@@ -14,58 +14,34 @@
 
 /* Header */
 
-.headerContainer {
-  z-index: -1;
-  background-image: linear-gradient(to left, #e9e9e9 30%,#b8b8b8 50%);
+header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #headerLogo {
   background-image: url(https://cdn.pixabay.com/photo/2015/10/09/16/46/abstract-979604_960_720.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: 60px -100px;
   background-size: cover;
-  height: 300px;
+  height: 70px;
 }
 
 .title {
+  display: flex;
+  align-items: center;
   color: white;
-  font-size: 90px;
+  font-size: 40px;
   font-family: cinzel;
-  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
-.loginNav {
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  color: white;
-  position: sticky;
-  left: 2000px;
-  bottom: 900px;
-  margin-right: 20px;
-  margin-bottom: -25px;
+.title span {
+  margin: 40px 0px 0px 10px;
 }
 
 .loginNav h5 {
   opacity: 0;
-}
-
-.login {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 1px 10px 1px 10px;
-  margin-left: 5px;
-  border-radius: 10px;
-  font-weight: bold;
-  
-}
-
-.login:hover {
-  background-color: grey;
-  cursor: pointer;
 }
 
 /* Header */
@@ -79,11 +55,10 @@
 
 nav {
   display: flex;
-  
+  align-items: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Courier New', Courier, monospace;
-  color: white;
 }
   
 nav ul a{
@@ -92,16 +67,11 @@ nav ul a{
   
 nav li{
   display: inline-block;
-  color: black;
-  border-bottom: 3px solid black;
-  padding: 0px 7px 0px;
-  margin-right: 50px;
+  margin-right: 20px;
 }
   
 nav li:hover {
-  border-radius: 3px;
-  color: white;
-  background-color: black;
+  font-weight: normal;
   cursor: pointer;
 }
   
@@ -119,12 +89,6 @@ nav a:visited {
   
 nav a:visited:hover {
   color: white;
-}
-
-@media screen and (max-width: 770px) {
-  nav {
-    font-size: 16px;
-  }
 }
 
 /*nav*/
